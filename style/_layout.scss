@@ -1,0 +1,31 @@
+$gutter: 3rem;
+
+.grid {
+  display: grid;
+  margin: auto;
+  // grid-template-rows: auto;
+
+  @include screen-desktop-lg {
+    width: 108rem; // 1140px - 30*2
+    grid-template-columns: repeat(12, 3.5rem);
+    gap: 6rem;
+  }
+
+  @include screen-desktop-sm {
+    width: 93rem; // 960px - 15*2
+    grid-template-columns: repeat(12, 5rem);
+    gap: 3rem;
+  }
+
+  @include screen-tablet {
+    width: 69rem;
+    grid-template-columns: repeat(6, 9rem);
+    gap: 3rem;
+  }
+
+  @include screen-mobile {
+    width: 31.1rem;
+    grid-template-columns: repeat(4, 5.6rem);
+    gap: 2.9rem;
+  }
+}

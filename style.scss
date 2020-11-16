@@ -1,0 +1,32 @@
+@import './style/variable';
+@import './style/mixin';
+@import './style/layout';
+
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.grid {
+  height: 100rem;
+}
+
+.item {
+  font-size: 2rem;
+  background-color: #D9F1FF;
+  height: 50px;
+  display: inline-block;
+
+  &--1 {
+    grid-column: 1 / span 3;
+  }
+
+  &--6 {
+    grid-column-start: span 2;
+    grid-column-end: 12;
+  }
+}
